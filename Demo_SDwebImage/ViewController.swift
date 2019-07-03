@@ -35,10 +35,10 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
-//extension ViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let url = URL(string: imageUrl[indexPath.row])
-//
-//
-//    }
-//}
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let url = URL(string: imageUrl[indexPath.row])
+        print("anh vu")
+
+    }
+}
